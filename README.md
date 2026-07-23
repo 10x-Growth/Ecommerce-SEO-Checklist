@@ -117,8 +117,8 @@ On-page SEO helps search engines connect your products and categories to high-in
 <!-- Example Contextual Internal Link in a Product Description -->
 <p>
 Looking for extra protection during winter? Pair these boots with our
-<a href="[https://example.com/socks/waterproof-wool-socks](https://example.com/socks/waterproof-wool-socks)">waterproof wool socks</a>
-or check out our full range of <a href="[https://example.com/winter-footwear](https://example.com/winter-footwear)">winter footwear</a>.
+<a href="https://example.com/socks/waterproof-wool-socks">waterproof wool socks</a>
+or check out our full range of <a href="https://example.com/winter-footwear">winter footwear</a>.
 </p>
 ```
 

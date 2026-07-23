@@ -41,14 +41,14 @@ Disallow: /checkout/
 Disallow: /account/
 Disallow: /search?*
 
-Sitemap: [https://example.com/sitemap.xml](https://example.com/sitemap.xml)
-Sitemap: [https://example.com/product-sitemap.xml](https://example.com/product-sitemap.xml)
+Sitemap: https://example.com/sitemap.xml
+Sitemap: https://example.com/product-sitemap.xml
 ```
 ### **🔹 URL Structure**
 
 * Maintain short, readable, lowercase URLs. Avoid random database IDs or long dynamic parameter strings.  
-  * **❌ Bad URL:** `[https://example.com/index.php?id_product=4821&category=12](https://example.com/index.php?id_product=4821&category=12)`  
-  * **✅ Good URL:** `[https://example.com/mens-shoes/leather-running-shoes](https://example.com/mens-shoes/leather-running-shoes)`  
+  * **❌ Bad URL:** `https://example.com/index.php?id_product=4821&category=12`  
+  * **✅ Good URL:** `https://example.com/mens-shoes/leather-running-shoes`  
 * Pick one URL format (either with or without trailing slashes, WWW or non-WWW) and enforce site-wide 301 redirects to the primary version to prevent split ranking signals.
 
 ### **🔹 Site Architecture**

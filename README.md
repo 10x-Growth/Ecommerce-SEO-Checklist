@@ -11,7 +11,7 @@ This comprehensive guide breaks down every critical component of ecommerce searc
 3. [3. Ecommerce Schema Markup](#3-ecommerce-schema-markup)
 4. [4. Platform-Specific SEO](#4-platform-specific-seo)
 5. [5. Audit Framework & Tools](#5-audit-framework--tools)
-6. [6. About Meetanshi & Expert Help](#6-expert-help)
+6. [6. About 10x Growth & Expert Help](#6-expert-help)
 
 ---
 
@@ -31,19 +31,19 @@ Technical SEO forms the foundation of your online store. If search engines canno
 * **XML Sitemap Segmentation:** Split your sitemaps into logical groups (e.g., `product-sitemap.xml`, `category-sitemap.xml`, `page-sitemap.xml`). This makes it easy to monitor indexation rates in Google Search Console and identify which product lines have crawling issues.  
 * **Excluding Low-Value Pages:** Keep out-of-stock items, 404 pages, internal search results, account login pages, and checkout paths out of your XML sitemaps.  
 * **Robots.txt Optimization:** Ensure your `robots.txt` file does not accidentally block critical CSS, JavaScript, or image files necessary for Google to render pages correctly. Disallow administrative paths, cart pages, and sensitive user data routes.  
-* Plaintext
 
-\# Robots.txt Example for Ecommerce  
-User-agent: \*  
-Disallow: /admin/  
-Disallow: /cart/  
-Disallow: /checkout/  
-Disallow: /account/  
-Disallow: /search?\*
+```txt
+# Robots.txt Example for Ecommerce
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /account/
+Disallow: /search?*
 
-Sitemap: https://example.com/sitemap.xml  
-Sitemap: https://example.com/product-sitemap.xml
-
+Sitemap: [https://example.com/sitemap.xml](https://example.com/sitemap.xml)
+Sitemap: [https://example.com/product-sitemap.xml](https://example.com/product-sitemap.xml)
+```
 ### **🔹 URL Structure**
 
 * Maintain short, readable, lowercase URLs. Avoid random database IDs or long dynamic parameter strings.  
@@ -82,22 +82,23 @@ On-page SEO helps search engines connect your products and categories to high-in
 
 * **Targeting Broad Search Intent:** Category pages often target higher search volumes than individual product pages (e.g., "Men's Running Shoes" vs. a specific model). Optimize category headings (`<h1>`) to match high-volume commercial keywords, following a clean heading hierarchy (`<h1>` down to `<h2>`/`<h3>` or `<h6>` for sub-sections).  
 * HTML
+```html
+<!-- Example Heading Hierarchy for a Category Page -->  
+<h1>Men's Leather Running Shoes</h1>
 
-\<\!-- Example Heading Hierarchy for a Category Page \--\>  
-\<h1\>Men's Leather Running Shoes\</h1\>
+<!-- Product Grid Section -->  
+<h2>Top Selling Leather Shoes</h2>
 
-\<\!-- Product Grid Section \--\>  
-\<h2\>Top Selling Leather Shoes\</h2\>
+<!-- Filtering Options or Sub-Sections -->  
+<h3>Filter by Size & Brand</h3>
 
-\<\!-- Filtering Options or Sub-Sections \--\>  
-\<h3\>Filter by Size & Brand\</h3\>
+<!-- Category FAQ or Footer Content -->  
+<h2>Frequently Asked Questions</h2>  
+<h3>How to Care for Genuine Leather Running Shoes?</h3>
 
-\<\!-- Category FAQ or Footer Content \--\>  
-\<h2\>Frequently Asked Questions\</h2\>  
-\<h3\>How to Care for Genuine Leather Running Shoes?\</h3\>
-
-\<\!-- Fine Print / Additional Policy Note \--\>  
-\<h6\>\*Free shipping applies to orders over $50 within the continental US.\</h6\>
+<!-- Fine Print / Additional Policy Note -->  
+<h6>*Free shipping applies to orders over $50 within the continental US.</h6>
+```
 
 * **Introductory & Supporting Copy:** Add 150–250 words of descriptive text above or below the product grid to provide context to search engines about the products listed on the page.  
 * **Internal Category Sub-Linking:** Include prominent links to related sub-categories, top-selling brands, and seasonal collections within the category layout.
@@ -112,12 +113,14 @@ On-page SEO helps search engines connect your products and categories to high-in
 * **Contextual Cross-Linking:** Embed internal links within product descriptions and blog posts pointing directly to relevant category hubs and complementary products.  
 * HTML
 
-\<\!-- Example Contextual Internal Link in a Product Description \--\>  
-\<p\>  
-  Looking for extra protection during winter? Pair these boots with our   
-  \<a href="https://example.com/socks/waterproof-wool-socks"\>waterproof wool socks\</a\>   
-  or check out our full range of \<a href="https://example.com/winter-footwear"\>winter footwear\</a\>.  
-\</p\>
+```html
+<!-- Example Contextual Internal Link in a Product Description -->
+<p>
+Looking for extra protection during winter? Pair these boots with our
+<a href="[https://example.com/socks/waterproof-wool-socks](https://example.com/socks/waterproof-wool-socks)">waterproof wool socks</a>
+or check out our full range of <a href="[https://example.com/winter-footwear](https://example.com/winter-footwear)">winter footwear</a>.
+</p>
+```
 
 * **“Frequently Bought Together” Modules:** Implement cross-selling modules on product pages. This improves user average order value (AOV) while distributing link equity throughout your inventory.
 
@@ -138,192 +141,114 @@ Structured data (Schema.org) translates your site's content into machine-readabl
 
 * **`Product` Schema:** Defines fundamental product traits including `name`, `image`, `description`, `sku`, `brand`, and global trade identifiers like `gtin13` or `mpn`.  
 * **`Offer` Schema:** Wrapped inside the product schema to communicate price, currency (`priceCurrency`), availability status (`InStock`, `OutOfStock`), and price expiration dates.  
-* JSON
 
+```json
 {
-
   "@context": "https://schema.org/",
-
   "@type": "Product",
-
   "name": "Men's Leather Running Shoes",
-
   "image": "https://example.com/images/shoes.jpg",
-
   "description": "Premium genuine leather running shoes designed for maximum comfort.",
-
   "sku": "SHOE-101",
-
   "mpn": "92582",
-
   "brand": {
-
     "@type": "Brand",
-
     "name": "FootwearPro"
-
   },
-
   "offers": {
-
     "@type": "Offer",
-
     "url": "https://example.com/mens-shoes/leather-running-shoes",
-
     "priceCurrency": "USD",
-
     "price": "120.00",
-
     "availability": "https://schema.org/InStock",
-
     "priceValidUntil": "2026-12-31"
-
   }
-
 }
-
+```
 ### **⭐ Review Schema**
 
 * **`AggregateRating` & `Review`:** Structured code that pulls customer star ratings and review counts into Google search results. Star snippets significantly increase visual real estate and click-through rates.  
-* JSON
 
+```json
 {
-
-  "@context": "https://schema.org/",
-
+  "@context": "[https://schema.org/](https://schema.org/)",
   "@type": "Product",
-
   "name": "Men's Leather Running Shoes",
-
   "aggregateRating": {
-
     "@type": "AggregateRating",
-
     "ratingValue": "4.8",
-
     "reviewCount": "124"
-
   },
-
-  "review": \[
-
+  "review": [
     {
-
       "@type": "Review",
-
       "author": { "@type": "Person", "name": "John Doe" },
-
       "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-
-      "reviewBody": "Extremely comfortable and fit true to size. Highly recommend\!"
-
+      "reviewBody": "Extremely comfortable and fit true to size. Highly recommend!"
     }
-
-  \]
-
+  ]
 }
+```
 
 **❓ FAQ Schema**
 
 * **`FAQPage` Schema:** Added to category or product pages containing dropdown Q\&A sections. Allows collapsible questions and answers to render directly inside search engine result snippets.  
-* JSON
 
+```json
 {
-
-  "@context": "https://schema.org",
-
+  "@context": "[https://schema.org](https://schema.org)",
   "@type": "FAQPage",
-
-  "mainEntity": \[
-
+  "mainEntity": [
     {
-
       "@type": "Question",
-
       "name": "How do I care for leather running shoes?",
-
       "acceptedAnswer": {
-
         "@type": "Answer",
-
         "text": "Wipe with a damp cloth and apply a leather conditioner every 3 to 6 months."
-
       }
-
     },
-
     {
-
       "@type": "Question",
-
       "name": "What is the return policy?",
-
       "acceptedAnswer": {
-
         "@type": "Answer",
-
         "text": "We offer a 30-day money-back guarantee on all unworn footwear."
-
       }
-
     }
-
-  \]
-
+  ]
 }
+```
 
 ### **Breadcrumb Schema**
 
-* **`BreadcrumbList` Schema:** Replaces long, messy URLs in search engine result snippets with clean, structured navigation paths (e.g., `Home > Shoes > Running Shoes`).  
-* JSON
+* **`BreadcrumbList` Schema:** Replaces long, messy URLs in search engine result snippets with clean, structured navigation paths (e.g., `Home > Shoes > Running Shoes`).
 
+```json
 {
-
-  "@context": "https://schema.org",
-
+  "@context": "[https://schema.org](https://schema.org)",
   "@type": "BreadcrumbList",
-
-  "itemListElement": \[
-
+  "itemListElement": [
     {
-
       "@type": "ListItem",
-
       "position": 1,
-
       "name": "Home",
-
-      "item": "https://example.com"
-
+      "item": "[https://example.com](https://example.com)"
     },
-
     {
-
       "@type": "ListItem",
-
       "position": 2,
-
       "name": "Shoes",
-
-      "item": "https://example.com/shoes"
-
+      "item": "[https://example.com/shoes](https://example.com/shoes)"
     },
-
     {
-
       "@type": "ListItem",
-
       "position": 3,
-
       "name": "Running Shoes",
-
-      "item": "https://example.com/shoes/running-shoes"
-
+      "item": "[https://example.com/shoes/running-shoes](https://example.com/shoes/running-shoes)"
     }
-
-  \]
-
+  ]
 }
+```
 
 ---
 
@@ -339,7 +264,7 @@ Every ecommerce engine handles URL routing, caching, and templating differently.
 
 {%- comment \-%} Force canonical URL to root product path {%- endcomment \-%}
 
-\<link rel="canonical" href="{{ canonical\_url }}"\>
+\<link rel="canonical" href="{{ required link\_url }}"\>
 
 * **Liquid App Bloat:** Frequently audit and remove unused Shopify apps whose scripts remain embedded in `theme.liquid` and slow down load speeds.  
 * **Robots.txt Customization:** Utilize `robots.txt.liquid` to customize crawl rules for tag pages and search parameter paths.  
@@ -347,11 +272,11 @@ Every ecommerce engine handles URL routing, caching, and templating differently.
 
 {%- comment \-%} Block collection tag filtering URLs in robots.txt.liquid {%- endcomment \-%}
 
-User-agent: \*
-
-Disallow: /collections/\*+\*
-
-Disallow: /collections/\*%2B\*
+```liquid
+User-agent: *
+Disallow: /collections/*+*
+Disallow: /collections/*%2B*
+```
 
 ### **🛍️ Magento 2 (Adobe Commerce)**
 
@@ -404,7 +329,7 @@ When performing a comprehensive ecommerce SEO audit, always review issues in ord
 ---
 
 <a id="6-expert-help"></a>
-## 6. About Meetanshi & Expert Help
+## 6. About 10x Griwth & Expert Help
 
 ### Need Expert Help Scaling Your Online Store?
 Looking to boost your ecommerce store's organic search traffic, fix complex technical issues, or optimize your platform? Visit [10xGrowth Agency](https://10xgrowth.agency/) for professional ecommerce SEO, platform optimization, and custom extension development services.

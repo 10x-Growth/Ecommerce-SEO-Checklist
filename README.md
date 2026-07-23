@@ -289,8 +289,8 @@ Disallow: /collections/*%2B*
 ### **🛍️ WooCommerce**
 
 * **Permalink Structure:** Set up clean custom permalink structures (`/product/` or `/shop/`) and eliminate unnecessary base parameters.  
-  * **❌ Bad Permalink:** https://example.com/?product_id=12`  
-  * **✅ Good Permalink:** https://example.com/product/leather-running-shoes`  
+  * **❌ Bad Permalink:** https://example.com/?product_id=12
+  * **✅ Good Permalink:** https://example.com/product/leather-running-shoes
 * **Database & Plugin Optimization:** Frequently clean up WooCommerce transients, database revisions, and conflicting SEO plugins that slow down backend performance.  
 * **Indexing Archives:** Use SEO plugins (RankMath, Yoast, or SEOPress) to `noindex` auto-generated WordPress tag archives, date archives, and attachment pages.
 

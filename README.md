@@ -171,7 +171,7 @@ Structured data (Schema.org) translates your site's content into machine-readabl
 
 ```json
 {
-  "@context": "[https://schema.org/](https://schema.org/)",
+  "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Men's Leather Running Shoes",
   "aggregateRating": {
@@ -196,7 +196,7 @@ Structured data (Schema.org) translates your site's content into machine-readabl
 
 ```json
 {
-  "@context": "[https://schema.org](https://schema.org)",
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
@@ -225,26 +225,26 @@ Structured data (Schema.org) translates your site's content into machine-readabl
 
 ```json
 {
-  "@context": "[https://schema.org](https://schema.org)",
+  "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "[https://example.com](https://example.com)"
+      "item": "https://example.com"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Shoes",
-      "item": "[https://example.com/shoes](https://example.com/shoes)"
+      "item": "https://example.com/shoes"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Running Shoes",
-      "item": "[https://example.com/shoes/running-shoes](https://example.com/shoes/running-shoes)"
+      "item": "https://example.com/shoes/running-shoes"
     }
   ]
 }
@@ -289,8 +289,8 @@ Disallow: /collections/*%2B*
 ### **🛍️ WooCommerce**
 
 * **Permalink Structure:** Set up clean custom permalink structures (`/product/` or `/shop/`) and eliminate unnecessary base parameters.  
-  * **❌ Bad Permalink:** `[example.com/?product_id=123](https://example.com/?product_id=123)`  
-  * **✅ Good Permalink:** `[example.com/product/leather-running-shoes](https://example.com/product/leather-running-shoes)`  
+  * **❌ Bad Permalink:** https://example.com/?product_id=12`  
+  * **✅ Good Permalink:** https://example.com/product/leather-running-shoes`  
 * **Database & Plugin Optimization:** Frequently clean up WooCommerce transients, database revisions, and conflicting SEO plugins that slow down backend performance.  
 * **Indexing Archives:** Use SEO plugins (RankMath, Yoast, or SEOPress) to `noindex` auto-generated WordPress tag archives, date archives, and attachment pages.
 

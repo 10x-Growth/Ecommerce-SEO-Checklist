@@ -6,12 +6,12 @@ This comprehensive guide breaks down every critical component of ecommerce searc
 ---
 
 ## 📋 Table of Contents
-1. [1. Technical SEO & Architecture](#1-technical-seo--architecture)
-2. [2. On-Page & Content SEO](#2-on-page--content-seo)
-3. [3. Ecommerce Schema Markup](#3-ecommerce-schema-markup)
-4. [4. Platform-Specific SEO](#4-platform-specific-seo)
-5. [5. Audit Framework & Tools](#5-audit-framework--tools)
-6. [6. About 10x Growth & Expert Help](#6-expert-help)
+[1. Technical SEO & Architecture](#1-technical-seo--architecture)<br>
+[2. On-Page & Content SEO](#2-on-page--content-seo)<br>
+[3. Ecommerce Schema Markup](#3-ecommerce-schema-markup)<br>
+[4. Platform-Specific SEO](#4-platform-specific-seo)<br>
+[5. Audit Framework & Tools](#5-audit-framework--tools)<br>
+[6. About 10x Growth & Expert Help](#6-expert-help)<br>
 
 ---
 

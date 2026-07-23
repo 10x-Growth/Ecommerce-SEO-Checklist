@@ -22,7 +22,7 @@ Technical SEO forms the foundation of your online store. If search engines canno
 
 ### **🔹 Crawling & Indexing**
 
-* **Faceted Navigation Control:** Ecommerce category filters (such as color, size, and price) generate thousands of unique URL parameters. Uncontrolled, these cause severe crawl bloat and duplicate content issues. Manage filters using canonical tags (`<link rel="canonical" href="[https://example.com/mens-shoes](https://example.com/mens-shoes)">`) back to the primary category, parameter handling in Google Search Console, or `noindex` rules on low-value combinations.  
+* **Faceted Navigation Control:** Ecommerce category filters (such as color, size, and price) generate thousands of unique URL parameters. Uncontrolled, these cause severe crawl bloat and duplicate content issues. Manage filters using canonical tags (`<link rel="canonical" href="https://example.com/mens-shoes">`) back to the primary category, parameter handling in Google Search Console, or `noindex` rules on low-value combinations.  
 * **Duplicate Content Prevention:** Online stores frequently generate identical content across multiple paths (e.g., product variants or trailing slashes). Establish clear self-referencing or primary canonical tags across all pages to pass authority to a single master URL.  
 * **Orphan Page Detection:** Ensure all active product and category pages are discoverable through site navigation or sitemaps so search bots do not miss key inventory.
 

@@ -329,7 +329,7 @@ When performing a comprehensive ecommerce SEO audit, always review issues in ord
 ---
 
 <a id="6-expert-help"></a>
-## 6. About 10x Griwth & Expert Help
+## 6. About 10x Growth & Expert Help
 
 ### Need Expert Help Scaling Your Online Store?
 Looking to boost your ecommerce store's organic search traffic, fix complex technical issues, or optimize your platform? Visit [10xGrowth Agency](https://10xgrowth.agency/) for professional ecommerce SEO, platform optimization, and custom extension development services.

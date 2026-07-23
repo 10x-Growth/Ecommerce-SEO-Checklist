@@ -303,7 +303,7 @@ Disallow: /collections/*%2B*
 ---
 
 <a id="5-audit-framework--tools"></a>
-## 📊 5. Audit Framework & Tools
+## 5. Audit Framework & Tools
 
 ### **🎯 Technical Audit Framework**
 
